@@ -15,9 +15,9 @@
     list-style: none;
 }
 
-.nav-ul a {
+/* .nav-ul a {
     color: #FFFFFF;
-}
+} */
 
 .link {
     box-sizing: border-box;
@@ -26,7 +26,7 @@
 }
 
 .navigation {
-    background-color: var(--primary-blue);
+    /* background-color: var(--primary-blue); */
     padding: 1.5rem;
 }
 
@@ -36,9 +36,10 @@
 
 .nav-home a {
     text-decoration: none;
-    color: #FFFFFF;
+    /* color: #FFFFFF; */
     float: left;
-    font-size: 1.5em;
+    font-size: 2em;
+    font-weight: bolder;
 }
 
 .nav-items-inline {
@@ -98,6 +99,33 @@ textarea {
     padding: .5rem;
     display: block;
     margin-left: 1rem;
+    font-size: 1em;
+    letter-spacing: 0.1rem;
+    transition: all 0.5s;
+}
+
+.btn-translate span {
+    display: inline-block;
+    position: relative;
+    transition: 0.5s;
+}
+
+.btn-translate span:after{
+    content: "\2193";
+    position: absolute;
+    opacity: 0;
+    top: 0;
+    right: -20px;
+    transition: 0.5s;
+}
+
+.btn-translate:hover span {
+    padding-right: 20px;
+}
+
+.btn-translate:hover span:after {
+    opacity: 1;
+    right: 0;
 }
 
 .footer {
